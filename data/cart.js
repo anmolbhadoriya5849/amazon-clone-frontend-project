@@ -1,3 +1,5 @@
+
+
 export let cart = JSON.parse(localStorage.getItem('cart'));
 
 if(!cart){
@@ -81,6 +83,7 @@ export function updateQuantity(productId,newQuantity){
     matchingItem.quantity = Number(newQuantity);
 
     saveToStorage();
+
 };
 
 export function updateDeliveryOption(productId,deliveryOptionId){
